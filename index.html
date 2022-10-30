@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./favicon fonts/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/base.css" />
+    <title>PCO Website</title>
+    <style>
+      /* Grid CSS */
+      .grid {
+        width: 100%;
+        display: block;
+        padding: 0;
+      }
+
+      .grid.wide {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .row.width {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -4px;
+        margin-right: -4px;
+      }
+
+      .row.no-gutters {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .col {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      .row.no-gutters .col {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .c-0 {
+        display: none;
+      }
+
+      .c-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+      }
+
+      .c-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+      }
+
+      .c-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+
+      .c-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+      }
+
+      .c-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+      }
+
+      .c-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .c-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+      }
+
+      .c-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+      }
+
+      .c-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+      }
+
+      .c-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+      }
+
+      .c-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+      }
+
+      .c-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .c-o-1 {
+        margin-left: 8.33333%;
+      }
+
+      .c-o-2 {
+        margin-left: 16.66667%;
+      }
+
+      .c-o-3 {
+        margin-left: 25%;
+      }
+
+      .c-o-4 {
+        margin-left: 33.33333%;
+      }
+
+      .c-o-5 {
+        margin-left: 41.66667%;
+      }
+
+      .c-o-6 {
+        margin-left: 50%;
+      }
+
+      .c-o-7 {
+        margin-left: 58.33333%;
+      }
+
+      .c-o-8 {
+        margin-left: 66.66667%;
+      }
+
+      .c-o-9 {
+        margin-left: 75%;
+      }
+
+      .c-o-10 {
+        margin-left: 83.33333%;
+      }
+
+      .c-o-11 {
+        margin-left: 91.66667%;
+      }
+
+      /* PC */
+
+      @media (min-width: 1024px) {
+        .row {
+          margin-left: -12px;
+          margin-right: -12px;
+        }
+        .row.sm-gutter {
+          margin-left: -5px;
+          margin-right: -5px;
+        }
+        .col {
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+        .row.sm-gutter .col {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        .l-0 {
+          display: none;
+        }
+        .l-1,
+        .l-2,
+        .l-2-4,
+        .l-3,
+        .l-4,
+        .l-5,
+        .l-6,
+        .l-7,
+        .l-8,
+        .l-9,
+        .l-10,
+        .l-11,
+        .l-12 {
+          display: block;
+        }
+        .l-1 {
+          flex: 0 0 8.33333%;
+          max-width: 8.33333%;
+        }
+        .l-2 {
+          flex: 0 0 16.66667%;
+          max-width: 16.66667%;
+        }
+        .l-2-4 {
+          flex: 0 0 20%;
+          max-width: 20%;
+        }
+        .l-3 {
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+        .l-4 {
+          flex: 0 0 33.33333%;
+          max-width: 33.33333%;
+        }
+        .l-5 {
+          flex: 0 0 41.66667%;
+          max-width: 41.66667%;
+        }
+        .l-6 {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+        .l-7 {
+          flex: 0 0 58.33333%;
+          max-width: 58.33333%;
+        }
+        .l-8 {
+          flex: 0 0 66.66667%;
+          max-width: 66.66667%;
+        }
+        .l-9 {
+          flex: 0 0 75%;
+          max-width: 75%;
+        }
+        .l-10 {
+          flex: 0 0 83.33333%;
+          max-width: 83.33333%;
+        }
+        .l-11 {
+          flex: 0 0 91.66667%;
+          max-width: 91.66667%;
+        }
+        .l-12 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .l-o-1 {
+          margin-left: 8.33333%;
+        }
+        .l-o-2 {
+          margin-left: 16.66667%;
+        }
+        .l-o-3 {
+          margin-left: 25%;
+        }
+        .l-o-4 {
+          margin-left: 33.33333%;
+        }
+        .l-o-5 {
+          margin-left: 41.66667%;
+        }
+        .l-o-6 {
+          margin-left: 50%;
+        }
+        .l-o-7 {
+          margin-left: 58.33333%;
+        }
+        .l-o-8 {
+          margin-left: 66.66667%;
+        }
+        .l-o-9 {
+          margin-left: 75%;
+        }
+        .l-o-10 {
+          margin-left: 83.33333%;
+        }
+        .l-o-11 {
+          margin-left: 91.66667%;
+        }
+      }
+    </style>
+  </head>
+  <!--  Design a PCO course website. It has a menu in which all items
+are linked to corresponding webpages and the content of each webpage is the same as
+the Module Description in Figure 1 (there are links, tables, images…). The menu
+consists of the following items:
+- Contact details (Add a form so that students can write questions and send to
+teachers)
+- Unit Overview
+- Learning resources
+- Assessment
+- Weekly schedule
+- Announcements
+- Student list
+(Refer to the PCO Module Description on the course webpage:
+https://lms.fit.hanu.vn/mod/resource/view.php?id=1802)-->
+  <body>
+    <header class="header">
+      <div class="header__topbar">
+        <div class="grid wide">
+          <div class="header__topbar__container">
+            <div class="row">
+              <div class="l-6 m-8 c-8">
+                <div class="header__topbar__container--contacts">
+                  <span>024 3854 4338 </span>
+                  <a href=""><i class="fab fa-pinterest"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="l-6 m-4 c-4">
+                <ul class="header__topbar__container--register">
+                  <a href="#">
+                    <li>Login</li>
+                  </a>
+                  <a href="#">
+                    <li>|</li>
+                  </a>
+                  <a href="#">
+                    <li>Register</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav__container">
+          <div class="grid wide">
+            <div class="row">
+              <div class="l-3 m-6 c-8">
+                <a href="#">
+                  <img
+                    id="image_logo"
+                    src="./images/logo.png"
+                    alt=""
+                    style="width: 70px; height: 65px"
+                  />
+                  <div class="header__nav__container--logo">
+                    <a href="http://lms.fit.hanu.vn"
+                      >PRINCIPLE OF COMPUTER<br />
+                      &emsp; &emsp; FIT HANU 2022</a
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="l-6 hide-on-tablet_mobile">
+                <ul class="header__nav__container--list">
+                  <li>
+                    <a class="active" href="https://lms.fit.hanu.vn">Home</a>
+                  </li>
+                  <li><a href="pages/about.html">About</a></li>
+                  <li><a href="pages/offers.html">News</a></li>
+                  <li><a href="pages/news.html">Offer</a></li>
+                  <li id="options">
+                    <a href="">Menu</a>
+                    <ul class="subnav">
+                      <li>
+                        <a href="./contactdetails.html">Contact Details</a>
+                      </li>
+                      <li><a href="./unit_overview.html">Unit Overview</a></li>
+                      <li>
+                        <a href="./learning_resources.html"
+                          >Learning Resources</a
+                        >
+                      </li>
+                      <li><a href="#assessment">Assessment</a></li>
+                      <li>
+                        <a href="./weekly_schedule.html">Weekly Schedule</a>
+                      </li>
+                      <li><a href="">Announcements</a></li>
+                      <li><a href="">Students List</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="l-3 m-6 c-4">
+                <div class="header__nav__container--search">
+                  <i class="fas fa-search" id="search"></i>
+                  <br />
+                  <input type="text" placeholder="Search..." class="active" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="home">
+      <div style="background-image: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(./images/information-transfer-technology-hero-header.jpg);" class="home__background">
+        
+      </div>
+      <div class="grid wide">
+        <div class="row">
+          <div class="home__container__slider">
+            <div class="home__container__slider--content">
+              <h1>Discover</h1>
+              <h1>Computer</h1>
+            </div>
+            <div class="home__container__slider--btn">
+              <div class="btn__bgc"></div>
+              <a href="#item__content"
+                >explore now
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <div class="grid wide">
+        <div class="search__container__tabs grid wide">
+          <div class="row">
+            <div class="search__container__tab d-flex active">
+              <i class="fa-solid fa-magnifying-glass-location"></i>
+              <span> <a href="./unit_overview.html">Unit Overview</a> </span>
+            </div>
+            <div class="search__container__tab d-flex">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>
+                <a href="./learning_resources.html">Learning Resources </a></span
+              >
+            </div>
+            <div class="search__container__tab d-flex">
+              <i class="fa-solid fa-comment-dots"></i>
+              <span> <a href="#assessment">Assessment </a> </span>
+            </div>
+            <div class="search__container__tab d-flex">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span> <a href="./weekly_schedule.html">Weekly Schedule</a> </span>
+            </div>
+            <div class="search__container__tab d-flex">
+              <i class="fa-solid fa-bullhorn"></i>
+              <span> <a href="">Announcements</a> </span>
+            </div>
+            <div class="search__container__tab d-flex">
+              <i class="fa-solid fa-list-check"></i>
+              <span> <a href="">Student Lists</a> </span>
+            </div>
+          </div>
+        </div>
+        <div class="search__container">
+          <div class="row">
+            <div class="search__container--item l-4 m-6 c-12">
+              <div>
+                <span>Searching for course</span>
+              </div>
+              <input
+                type="text"
+                maxlength="35"
+                placeholder="Example: HTML/CSS/JS Course"
+              />
+            </div>
+            <div class="search__container--item l-2 m-6 c-12">
+              <div>
+                <span>Course Release Time </span>
+              </div>
+              <input type="date" placeholder="DD-MM-YYYY" />
+            </div>
+
+            <div class="search__container--item l-1 m-3 c-6">
+              <div>
+                <span>Result</span>
+              </div>
+              <select style="width: 200px; background-image: url(./images/chevron-down-1485703-1258924.webp);" name="" id="">
+                <option>Tutorial</option>
+                <option>Media (for HTML )</option>
+                <option>APIs (for HTML )</option>
+                <option>Advanced (for CSS )</option>
+                <option>Responsive (for CSS )</option>
+                <option>DOM (for Javascript)</option>
+                <option>Async (for Javascript)</option>
+                <option>More... (JQuery, SQL, Node.js)</option>
+              </select>
+            </div>
+            <div
+              style="margin-left: 120px"
+              class="search__container--btn l-2 m-4 c-4"
+            >
+              <a href="#">Search</a>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Course -->
+    <div id="item__content" class="course">
+      <div class="grid wide">
+        <div class="course__container">
+          <div class="course__container__content">
+            <h2>We have the best courses for students in IT field</h2>
+            <p>Join our course and enlarge your knowledge <br /></p>
+          </div>
+          <div class="course__container__items">
+            <div class="row">
+              <div class="col l-4 m-12 c-12">
+                <div class="course__container__item">
+                  <div class="item__overlay"></div>
+                  <div
+                    class="item__background"
+                    style="background-image: url(./images/htm16157919239459.jpg)"
+                  ></div>
+                  <div class="item__content">
+                    <span class="item_special"> For Beginner </span>
+                    <div class="item_center">
+                      <h1>HTML & CSS</h1>
+                      <div class="item_fit">FIT 2022</div>
+                      <div class="item_rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="course__item--btn">
+                        <div class="course__btn__bgc"></div>
+                        <a href="https://www.w3schools.com/html/default.asp"
+                          >See more
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-12 c-12">
+                <div class="course__container__item">
+                  <div class="item__overlay"></div>
+                  <div
+                    class="item__background"
+                    style="background-image: url(./images/JS.jpg)"
+                  ></div>
+                  <div class="item__content">
+                    <span class="item_special"> For Intermediate</span>
+                    <div class="item_center">
+                      <h1>Javascript</h1>
+                      <div class="fit">FIT 2022</div>
+                      <div class="item_rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="course__item--btn">
+                        <div class="course__btn__bgc"></div>
+                        <a href="https://www.w3schools.com/js/default.asp"
+                          >See more
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-12 c-12">
+                <div class="course__container__item">
+                  <div class="item__overlay"></div>
+                  <div
+                    class="item__background"
+                    style="background-image: url(./images/jquery.png)"
+                  ></div>
+                  <div class="item__content">
+                    <span class="item_special">For Advanced / Database </span>
+                    <div class="item_center">
+                      <h1>Ajax JQuery</h1>
+                      <div class="item_fit">FIT 2022</div>
+                      <div class="item_rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="course__item--btn">
+                        <div class="course__btn__bgc"></div>
+                        <a href="https://www.w3schools.com/jquery/default.asp"
+                          >See more
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package Tutorials -->
+    <div class="package">
+      <div
+        class="package__background"
+        style="background-image: url(./images/pexels-photo-1779487.webp)"
+      ></div>
+      <div class="package__container">
+        <div class="grid wide">
+          <div class="package__container___body">
+            <div class="package__container___body--content">
+              <div class="body--content__cta">
+                <h2>Programming learning package for newbies</h2>
+                <div class="item_rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  This course will help you learn about computer and
+                  programming.<br />
+                  The best course about Principle of Computer and Information
+                  Technology world that FIT HANU has to offer <br />
+                  - Lecturer : Do Thuy Duong -
+                </p>
+              </div>
+              <div class="item--btn">
+                <div class="btn__bgc"></div>
+                <a href="#item__content"
+                  >Learn Now
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Assessment -->
+    <div id="assessment" class="assessment">
+      <div class="assess__background"></div>
+      <div class="grid wide">
+        <div class="assess__container">
+          <div class="row">
+            <div class="col l-5"></div>
+            <div class="col l-7">
+              <div class="assess__container__table">
+                <div class="assess__container__form--title">
+                  <h2 id="assess__title">Assessment</h2>
+                </div>
+                <div class="assess__content">
+                  <table>
+                    <tr>
+                      <th id="assh">Assessment Name</th>
+                      <th>Weight</th>
+                      <th>Brief Description</th>
+                    </tr>
+                    <tr>
+                      <td>Attendance</td>
+                      <td>10%</td>
+                      <td>
+                        Students must participate in at least 80% of classes.
+                        Otherwise, you are not allowed to take the final exam.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Midterm</td>
+                      <td>30%</td>
+                      <td>Project/Computer-based Exam</td>
+                    </tr>
+                    <tr>
+                      <td>Final Exam</td>
+                      <td>60%</td>
+                      <td>
+                        Closed book, 90 minutes test, covers all lecture topics
+                      </td>
+                    </tr>
+                    <tr></tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-3 m-6 c-6 s-12">
+              <div class="footer__container__about">
+                <div class="container__about--logo">
+                  <i id="computer" class="fa-solid fa-computer"></i>
+                  <a href="#"> FIT PCO </a>
+                </div>
+                <div class="container__about--text">
+                  <i id="quote1" class="fa-solid fa-quote-left"></i>
+                  <p>
+                    " It's not just about having an idea... <br />
+                    ...but also turning it into reality." <br />
+                    &emsp;&emsp;&emsp;-- Scott Belsky --
+                  </p>
+                  <i id="quote2" class="fa-solid fa-quote-right"></i>
+                </div>
+                <div class="container__about--social">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-weibo"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-3 m-6 c-6 s-12">
+              <div class="footer__container__tags">
+                <h2>Hashtags</h2>
+                <div class="footer__container__tags__content">
+                  <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">RAM</a></li>
+                    <li><a href="#">JQuery</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">Node.js</a></li>
+                    <li><a href="#">Excel,Word</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col l-3 m-6 c-6 s-12">
+              <div class="footer__container__contact">
+                <h2>Contact Info</h2>
+                <div class="footer__container__contact__content">
+                  <div class="container__contact__info">
+                    <div class="container__contact__info--img">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span>
+                      <a
+                        href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+H%C3%A0+N%E1%BB%99i/@20.9889826,105.7921033,17z/data=!3m1!4b1!4m5!3m4!1s0x3135adb29ed54487:0xbe22035eae87b5d7!8m2!3d20.9889776!4d105.7946782"
+                      >
+                        R.210 Building C Hanoi University
+                      </a>
+                    </span>
+                  </div>
+                  <div class="container__contact__info">
+                    <div class="container__contact__info--img">
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <span> <a href="">fit@hanu.edu.vn</a> </span>
+                  </div>
+                  <div class="container__contact__info">
+                    <div class="container__contact__info--img">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span> <a href="">024 3854 4338</a></span>
+                  </div>
+                  <div class="container__contact__info">
+                    <div class="container__contact__info--img">
+                      <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <span
+                      ><a href="https://lms.fit.hanu.vn">FIT HANU 2022</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="copyright">
+            Copyright © October 2022 By PCO GROUP B1-6 <br />
+            <a href="https://www.facebook.com/9stnm/">Đàm Hữu Vũ (7C-21)</a>
+               <br />
+              <a href="https://www.facebook.com/changviwatsup24">Vũ Thùy Trang (3C-21)</a> <br />
+              <a href="https://www.facebook.com/profile.php?id=100084077868450">Trần Thị Thêu ( 6C-21)</a>
+            </a></span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

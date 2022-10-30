@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./favicon fonts/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <title>PCO Weekly Schedule</title>
+    <style>
+      /* Header */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        text-decoration: none;
+      }
+
+      body {
+        font-family: "Times New Roman", Times, serif;
+        padding: 10px;
+        background: #f1f1f1;
+        height: 15px;
+      }
+
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: lightsteelblue;
+      }
+
+      .header h1 {
+        font-size: 35px;
+      }
+
+      .header h1:hover {
+        color: rgb(14, 187, 14);
+        cursor: pointer;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        opacity: 0.5;
+        border-top: 1px solid #fff;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .topnav a i {
+        margin-right: 8px;
+      }
+
+      /* Table */
+      table {
+        margin-top: 15px;
+        padding-bottom: 20px;
+        font-family: arial, san-serif;
+        border-collapse: collapse;
+        width: 80%;
+        transform: translateX(130px);
+        border: 5px solid #dddddd;
+      }
+      h2 {
+        margin-top: 15px;
+        text-align: center;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      #midterm:hover {
+        color: red;
+        cursor: pointer;
+      }
+
+      tr:nth-child(odd),
+      #des {
+        background-color: #b5d7f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        style="width: 75px; height: 65px; float: left"
+        src="./images/logo.png"
+        alt="HANU Logo"
+      />
+      <h1 style="text-transform: uppercase">
+        Principle of Computer <br />
+        PROPOSED WEEKLY LECTURES & TUTORIAL SCHEDULES
+      </h1>
+      <p style="transform: translateX(25px)">FIT PCO 2022</p>
+    </div>
+
+    <div class="topnav">
+      <a href="./index.html"><i class="fa-solid fa-house-user"></i>Home</a>
+      <a href="#"><i class="fa-solid fa-info"></i>About</a>
+      <a href="#"><i class="fa-solid fa-square-caret-down"></i>More</a>
+      <a href="#" style="float: right"> <i class="fa-solid fa-bars"></i>Menu</a>
+      <a href="#" style="float: right"
+        ><i class="fa-solid fa-user-astronaut"></i>Program</a
+      >
+      <a href="#" style="float: right"
+        ><i class="fa-solid fa-language"></i>Language</a
+      >
+    </div>
+
+    <div class="schedule__table">
+      <div class="schedule__table--content">
+        <h2>Proposed Weekly Lectures & Tutorial Schedules</h2>
+
+        <table>
+          <tr id="des">
+            <th>Week</th>
+            <th>Description</th>
+            <th>Tutorial</th>
+            <th>Note</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Orientation - Overview of computer</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Computer components</td>
+            <td>
+              Email Etiquettes <br />
+              Typing <br />
+              Microsoft Word
+            </td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Logic gate combination Microsoft Excel</td>
+            <td>Microsoft Excel</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Programs and Apps</td>
+            <td>Microsoft Excel</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Microsoft Excel</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>Digital storage</td>
+            <td>Digital storage</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>Number systems (Bin, Oct, Dec, Hex) + Number representation</td>
+            <td>CSS</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td>Character representation</td>
+            <td>HTML + CSS</td>
+            <td></td>
+          </tr>
+
+          <tr id="midterm">
+            <td>9</td>
+            <td><b>Midterm Project</b></td>
+            <td><b>Midterm Project</b></td>
+            <td><b>Midterm Project</b></td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td>Operating systems</td>
+            <td>Number System</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>11</td>
+            <td>Network and communication</td>
+            <td>Data representation</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>12</td>
+            <td>Data/Database Management Systems</td>
+            <td>Data representation</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>13</td>
+            <td>Software life cycle or Security basics</td>
+            <td>Database/Photoshop</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>14</td>
+            <td>Review</td>
+            <td>Review</td>
+            <td></td>
+          </tr>
+
+          <tr id="midterm">
+            <td>15</td>
+            <td><b>Final Exam</b></td>
+            <td></td>
+            <td><b>Final Exam</b></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
